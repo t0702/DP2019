@@ -73,7 +73,121 @@
             <dd>순서에 중요한 의미가 있는 목록을 이야기한다.</dd>
         </dl>
 
-        
+        <!-- storng, em <> b, i -->
+        <strong>강한 강조</strong>
+        <em>강조</em>
+        <br/>
+        <b>볼드체</b>
+        <i>이텔릭체</i>
+        <br/>
+        <!-- ins 첨부글, insert의 앞글자 / del 삭제글 <> u, strike-->
+        <ins>첨부하는 내용</ins> 
+        <del>쓸데없는 내용. 변경되어 삭제될 내용</del>
+        <br/>
+        <u>밑줄</u>
+        <strike>중간줄</strike>
+        <br/>
+        <!-- sup 윗첨자, sub 아랫첨자 -->
+        2<sup>2</sup> : 제곱수, 2의 2승
+        H<sub>2</sub> : 물의 화학식
+        <br/>
+        <img src="images/gallery_0.jpg" width="300px"/> 
+        <br/>
+        <img src="./images/gallery_0.jpg" height="300px"/>
+        <br/>
+
+        <style>
+            table, tr, td{
+                border: solid 1px black;
+            }
+        </style>
+        <!-- table 도표 -->
+        <!-- table, tr 행 한줄 , td 열 한칸 -->
+        <!-- summary 요약, caption 표제 -->
+        <table summary="표의 요약, 학생명단">
+            <caption>[표1] 표의제목</caption>
+            <!-- thead, tbody, tfoot -->
+            <thead>
+                <tr>
+                    <!-- scope = col, row -->
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>
+                    <th scope="col">제목4</th>  
+                    <th scope="col">제목5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--colspan 열 늘이기 /가로로 늘림, rowspan 행 늘이기 /세로로 늘림-->
+                    <td colspan="2">1</td> <!-- 가로로 두칸크기로 차지함 -->
+                    <td rowspan="2">2</td> <!-- 세로로 두칸 차지함-->
+                    <td>3</td>
+                    <td>4</td>
+                </tr>   
+            </tbody>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+        <br/>
+        <style>
+            table, tr, td{
+                border: 1px soild black;
+            }
+        </style>
+        <table>
+            <caption>[표2] 도전과제</caption>
+           <tr>
+               <td colspan="3">up</td>
+               <td rowspan="2">right</td>
+           </tr>
+           <tr>
+               <td rowspan="2">left</td>
+               <td colspan="2">center</td>
+           </tr>
+           <tr>
+               <td colspan="4">down</td>
+           </tr>
+        </table>
+        <br/>
+        <form>
+            <input type="text" placeholder="아이디를 입력하세요." />
+            <input type="password" placeholder="비밀번호를 입력하세요."/>
+
+            <input type="radio" name="bt1"/>
+            <input type="radio" name="bt1"/>
+            <input type="radio" name="bt1"/>
+            <!-- 하나만 선택해야할 때 name이 동일 해야함.  -->
+            <input type="radio" name="bt2"/>
+            <input type="radio" name="bt2"/>
+            <input type="radio" name="bt2"/>
+
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <input type="checkbox" />
+            <!-- 중복 선택 가능?-->
+
+            <select>
+                <option>짜장면</option>
+                <option>짬뽕</option>
+            </select>
+
+            <!-- textarea 가로 3글자, 세로 5줄 정도의 크기 -->
+            <textarea cols="30" rows="5"> 
+
+            </textarea>
+
+            <input type="button" value="댓글쓰기"/>
+            <input type="button" value="테스트 버튼" onclick="alert('테스트 버튼이 눌렸습니다.')"/>
+
+            <input type="submit" value="제출"/>
+        </form>
+
     </body>
 
 
