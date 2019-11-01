@@ -8,6 +8,11 @@
                 /* margin: 10px; */   /* 바깥여백 : 10px; */
                 /* border: solid 1px black; */ /* 경계선: 실선 1픽셀 두께 검은색; */
             }
+            header{
+                padding: 30px;
+            }
+            nav{ padding: 30px;
+            }
             header>ul>li{
                 float:left; /*둥둥떠다닌다 : 왼쪽기준 */
                 list-style : none; /* 리스트모양 (동그라미) : 없음  */
@@ -49,6 +54,55 @@
             .container:nth-child(2){background-color: #5d9;}
             .container:nth-child(3){background-color: #f76;}
             .container:nth-child(4){background-color: #ec5;}
+            .container{
+                padding:30px;
+            }
+            .content_part{
+                float:left; /*둥둥떠다니게: 왼쪽기준으로*/
+                width: 480px;
+                margin: 10px;
+            }
+            .container>section{
+                /* margin-left: 180px; */
+                width: 1000px;
+                margin-left: auto; /* 바깥여백-왼쪽 : 자동 */
+                margin-right: auto;
+            }
+            .container>section>h3 {
+                color: white;
+            }
+            .container dt{
+                font-weight: bold;
+                margin: 25px; /* 네 방향 모두 */
+                margin-top: 25px;
+                margin-right: 0px;
+                margin-bottom: 25px;
+                margin-left: 0px;
+                margin : 25px 0px; /* 상하 좌우*/
+                margin: 25px 0px 25px 0px; /* 상 우 하 좌 (위에서부터 시계방향) */
+            }
+            .container dd{
+                margin: 25px 0px; /* 바깥여백: 없음 */
+            }
+            footer li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+            }
+            footer {
+                background-color: #999;
+                padding: 30px;
+            }
+            #wrap {
+                /* width:1100px; */ /* 고정값 */
+                min-width: 1100px; /* 최소 넓이 (미니멈/맥시멈) */
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
         </style>
     </head>
     <body>
@@ -115,8 +169,10 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
+
                 <div class="container">
                     <section>
                         <h3>Web Design</h3>
@@ -146,8 +202,10 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
+
                 <div class="container">
                     <section>
                         <h3>Web Design</h3>
@@ -177,8 +235,10 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
+
                 <div class="container">
                     <section>
                         <h3>Web Design</h3>
@@ -208,11 +268,38 @@
                                 </dd>
                             </dl>
                         </div>
+                        <div class="clear"></div>
                     </section>
                 </div>
                 
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                    <div>
+                        the loges in the design are the property of their respective owners/copyright holders.
+                    </div>
+                </div>
+                <ul class="float_right">
+                    <li><img src="images1/layout1_footer_icon1.png"/></li>
+                    <li><img src="images1/layout1_footer_icon2.png"/></li>
+                    <li><img src="images1/layout1_footer_icon3.png"/></li>
+                    <li><img src="images1/layout1_footer_icon4.png"/></li>
+                    <li><img src="images1/layout1_footer_icon5.png"/></li>
+                    <li><img src="images1/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </footer>
         </div>
     </body>
 </html>
